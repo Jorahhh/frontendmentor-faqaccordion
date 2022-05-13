@@ -7,6 +7,7 @@ body {
 	justify-content: center;
 	font-family: 'Kumbh Sans', sans-serif;
 	line-height: 1.5;
+	color: $clr-primary;
 }
 
 .card {
@@ -23,8 +24,19 @@ body {
 
 		// Accordion
 		.accordion {
-			padding-block: 1rem;
 			border-bottom: 1px solid $clr-divider;
+
+			&.active .accordion-icon {
+				transform: rotate(180deg);
+			}
+
+			&.active .accordion-body {
+				height: 2rem;
+			}
+
+			&.active .accordion-title {
+				font-weight: 700;
+			}
 
 			.accordion-header {
 				display: flex;
@@ -35,22 +47,15 @@ body {
 			}
 
 			.accordion-body {
+				font-size: 0.75rem;
 				height: 0;
 				overflow: hidden;
 				transition: height 0.5s ease;
-			}
-
-			.accordion-body.show {
-				height: 5rem;
-				padding: 0.5rem;
+				color: $clr-neutral-300;
 			}
 
 			.accordion-icon {
 				transition: transform 0.5s ease;
-			}
-
-			.accordion-icon.rotate {
-				transform: rotate(180deg);
 			}
 		}
 	}

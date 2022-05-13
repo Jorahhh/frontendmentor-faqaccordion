@@ -1,17 +1,16 @@
 const accordionQuestions = document.querySelectorAll('.accordion-header');
-const accordionBodies = document.querySelectorAll('.accordion-body');
-const accordionIcons = document.querySelectorAll('.accordion-icon');
 
 accordionQuestions.forEach((q) => {
 	q.addEventListener('click', () => {
-		// Remove class from all accordions
-		accordionBodies.forEach((b) => b.classList.remove('show'));
-		accordionIcons.forEach((i) => i.classList.remove('rotate'));
+		// Active class will be set on the accordion itself
+		const accordion = q.closest('.accordion');
 
-		// Traverse DOM for adding classes to targeted accordion
-		q.closest('.accordion')
-			.querySelector('.accordion-body')
-			.classList.add('show');
-		q.querySelector('.accordion-icon').classList.add('rotate');
+		// Alternate opening accordions to prevent the card expanding too much
+		if (accordion.classList.contains('active')) {
+			accordion.classList.remove('active');
+		} else {
+			document.querySelector('.accordion.active')?.classList.remove('active');
+			accordion.classList.add('active');
+		}
 	});
 });
