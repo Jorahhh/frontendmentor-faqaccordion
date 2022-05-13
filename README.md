@@ -44,7 +44,6 @@ Mobile
 
 - SASS
 - Flexbox
-- Grid
 - Javascript (event listeners)
 
 ### What I learned
