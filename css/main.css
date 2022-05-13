@@ -99,13 +99,14 @@ body {
     flex-direction: column;
     background: url("../images/bg-pattern-mobile.svg") no-repeat top center;
     background-color: hsl(0deg, 0%, 100%);
+    margin-top: 7.5rem;
   }
   .card .card-img-box {
     display: none;
   }
   .card .card-img {
     overflow-y: visible;
-    margin-top: -7rem;
+    margin-top: -7.5rem;
   }
   .card .card-img .card-img-desktop {
     transform: translateX(0);
@@ -117,5 +118,6 @@ body {
   }
   .card .card-text .title {
     text-align: center;
+    margin-bottom: 0.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
