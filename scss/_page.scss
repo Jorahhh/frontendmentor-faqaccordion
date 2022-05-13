@@ -78,6 +78,11 @@ body {
 				align-items: center;
 				cursor: pointer;
 				padding-block: 1rem;
+
+				&:hover {
+					color: $clr-secondary;
+					transition: color 0.5s ease;
+				}
 			}
 
 			.accordion-body {

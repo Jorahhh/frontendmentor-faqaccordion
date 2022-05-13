@@ -82,6 +82,10 @@ body {
   cursor: pointer;
   padding-block: 1rem;
 }
+.card .card-text .accordion .accordion-header:hover {
+  color: hsl(14deg, 88%, 65%);
+  transition: color 0.5s ease;
+}
 .card .card-text .accordion .accordion-body {
   font-size: 0.75rem;
   max-height: 0;
