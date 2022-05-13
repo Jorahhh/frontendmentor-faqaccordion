@@ -1,0 +1,31 @@
+@media (max-width: 57.5rem) {
+	.card {
+		flex-direction: column;
+		background: url('../images/bg-pattern-mobile.svg') no-repeat top center;
+		background-color: hsl(0, 0%, 100%);
+
+		.card-img-box {
+			display: none;
+		}
+
+		.card-img {
+			overflow-y: visible;
+			margin-top: -7rem;
+
+			.card-img-desktop {
+				transform: translateX(0);
+
+				max-width: 15rem;
+			}
+		}
+
+		.card-text {
+			padding-block: 3rem;
+			padding-inline: 1.5rem;
+
+			.title {
+				text-align: center;
+			}
+		}
+	}
+}
