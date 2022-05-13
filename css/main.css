@@ -25,7 +25,28 @@ body {
 .card {
   background-color: hsl(0deg, 0%, 100%);
 }
+.card .card-text {
+  padding: 2rem;
+}
 .card .card-text .title {
   font-weight: 700;
   font-size: 2rem;
+}
+.card .card-text .accordion {
+  padding-block: 2rem;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+}
+.card .card-text .accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.card .card-text .accordion .accordion-body {
+  height: 0;
+  overflow: hidden;
+}
+.card .card-text .accordion .accordion-body .show {
+  height: auto;
+  padding: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

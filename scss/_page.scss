@@ -11,15 +11,36 @@ body {
 .card {
 	background-color: hsl(0, 0%, 100%);
 
-	// Card Image
-	.card-img {
-	}
-
 	// Card Text
 	.card-text {
+		padding: 2rem;
+
 		.title {
 			font-weight: 700;
 			font-size: 2rem;
+		}
+
+		// Accordion
+		.accordion {
+			padding-block: 2rem;
+			border-bottom: 1px solid $clr-divider;
+
+			.accordion-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+			}
+
+			.accordion-body {
+				height: 0;
+				overflow: hidden;
+			}
+
+			.accordion-body .show {
+				height: auto;
+				padding: 0.5rem;
+			}
 		}
 	}
 }
