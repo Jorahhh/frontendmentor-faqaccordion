@@ -12,6 +12,7 @@ body {
 
 .card {
 	background-color: hsl(0, 0%, 100%);
+	max-width: $max-width;
 
 	// Card Text
 	.card-text {
@@ -32,6 +33,7 @@ body {
 
 			&.active .accordion-body {
 				height: 2rem;
+				padding-bottom: 1rem;
 			}
 
 			&.active .accordion-title {
@@ -50,7 +52,7 @@ body {
 				font-size: 0.75rem;
 				height: 0;
 				overflow: hidden;
-				transition: height 0.5s ease;
+				transition: all 0.5s ease;
 				color: $clr-neutral-300;
 			}
 
