@@ -10,4 +10,22 @@
 img {
   max-width: 100%;
   display: block;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.card .card-text .title {
+  font-weight: 700;
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
