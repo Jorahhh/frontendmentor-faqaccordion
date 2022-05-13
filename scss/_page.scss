@@ -6,6 +6,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Kumbh Sans', sans-serif;
+	line-height: 1.5;
 }
 
 .card {
@@ -22,7 +23,7 @@ body {
 
 		// Accordion
 		.accordion {
-			padding-block: 2rem;
+			padding-block: 1rem;
 			border-bottom: 1px solid $clr-divider;
 
 			.accordion-header {
@@ -30,16 +31,26 @@ body {
 				justify-content: space-between;
 				align-items: center;
 				cursor: pointer;
+				padding-block: 1rem;
 			}
 
 			.accordion-body {
 				height: 0;
 				overflow: hidden;
+				transition: height 0.5s ease;
 			}
 
-			.accordion-body .show {
-				height: auto;
+			.accordion-body.show {
+				height: 5rem;
 				padding: 0.5rem;
+			}
+
+			.accordion-icon {
+				transition: transform 0.5s ease;
+			}
+
+			.accordion-icon.rotate {
+				transform: rotate(180deg);
 			}
 		}
 	}

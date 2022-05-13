@@ -5,5 +5,7 @@ accordionQuestions.forEach((q) => {
 		q.closest('.accordion')
 			.querySelector('.accordion-body')
 			.classList.toggle('show');
+
+		q.querySelector('.accordion-icon').classList.toggle('rotate');
 	});
 });
